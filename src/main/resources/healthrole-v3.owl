@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ifi.uio.no/ontologies/health-role#"
+     xml:base="http://ifi.uio.no/ontologies/health-role"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:health-role="http://ifi.uio.no/ontologies/health-role#">
+    <owl:Ontology rdf:about="http://ifi.uio.no/ontologies/health-role#"/>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://ifi.uio.no/ontologies/health-role#hasAccessType -->
+
+    <owl:ObjectProperty rdf:about="http://ifi.uio.no/ontologies/health-role#hasAccessType">
+        <rdfs:domain rdf:resource="http://ifi.uio.no/ontologies/health-role#Staff"/>
+        <rdfs:range rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+    </owl:ObjectProperty>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://ifi.uio.no/ontologies/health-role#hasRole"/>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#worksAt -->
+
+    <owl:ObjectProperty rdf:about="http://ifi.uio.no/ontologies/health-role#worksAt">
+        <rdfs:domain rdf:resource="http://ifi.uio.no/ontologies/health-role#Staff"/>
+        <rdfs:range rdf:resource="http://ifi.uio.no/ontologies/health-role#Department"/>
+    </owl:ObjectProperty>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://ifi.uio.no/ontologies/health-role#accessTypeName -->
+
+    <owl:DatatypeProperty rdf:about="http://ifi.uio.no/ontologies/health-role#accessTypeName">
+        <rdfs:domain rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#roleName -->
+
+    <owl:DatatypeProperty rdf:about="http://ifi.uio.no/ontologies/health-role#roleName">
+        <rdfs:domain rdf:resource="http://ifi.uio.no/ontologies/health-role#Role"/>
+    </owl:DatatypeProperty>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Access -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Access"/>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Access-Delete -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Access-Delete">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Access-Read -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Access-Read">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Access-Write -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Access-Write">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Department -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Department"/>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Department-Cardiology -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Department-Cardiology">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Department"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Hospital -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Hospital"/>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Role -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Role"/>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Role-Doctor -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Role-Doctor">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Role"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Role-Nurse -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Role-Nurse">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Role"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Role-Patient -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Role-Patient">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Role"/>
+    </owl:Class>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Staff -->
+
+    <owl:Class rdf:about="http://ifi.uio.no/ontologies/health-role#Staff">
+        <rdfs:subClassOf rdf:resource="http://ifi.uio.no/ontologies/health-role#Hospital"/>
+    </owl:Class>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Access -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Access">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Access-Read"/>
+        <accessTypeName>read</accessTypeName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Cardiologist -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Cardiologist">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Staff"/>
+        <hasRole rdf:resource="http://ifi.uio.no/ontologies/health-role#Doctor"/>
+        <hasRole rdf:resource="http://ifi.uio.no/ontologies/health-role#Lege"/>
+        <hasRole rdf:resource="http://ifi.uio.no/ontologies/health-role#Physician"/>
+        <worksAt rdf:resource="http://ifi.uio.no/ontologies/health-role#Cardiology"/>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Cardiology -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Cardiology">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Department-Cardiology"/>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Change -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Change">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Access-Write"/>
+        <accessTypeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">write</accessTypeName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Doctor -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Doctor">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Role-Doctor"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Change"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Read"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Review"/>
+        <roleName>doctor</roleName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Lege -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Lege">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Role-Doctor"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Read"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Review"/>
+        <roleName>doctor</roleName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Nurse -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Nurse">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Role-Nurse"/>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Patient -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Patient">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Role-Patient"/>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Physician -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Physician">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Role-Doctor"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Access"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Read"/>
+        <hasAccessType rdf:resource="http://ifi.uio.no/ontologies/health-role#Review"/>
+        <roleName>doctor</roleName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Read -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Read">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Access-Read"/>
+        <accessTypeName>read</accessTypeName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Review -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Review">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Access-Read"/>
+        <accessTypeName>read</accessTypeName>
+    </owl:NamedIndividual>
+
+    <!-- http://ifi.uio.no/ontologies/health-role#Write -->
+
+    <owl:NamedIndividual rdf:about="http://ifi.uio.no/ontologies/health-role#Write">
+        <rdf:type rdf:resource="http://ifi.uio.no/ontologies/health-role#Access-Write"/>
+        <accessTypeName>write</accessTypeName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+    <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
+    
